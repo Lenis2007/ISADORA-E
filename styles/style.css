@@ -23,7 +23,7 @@
     display: flex;
     /* Animación */
     transition: transform 0.5s ease;
-    /* Permite el desplazamiento horizontal con gestos tactiles */
+    /* Permite el desplazamiento horizontal con gestos tactiles, gestionando desde css */
     touch-action: pan-y;
 }
 

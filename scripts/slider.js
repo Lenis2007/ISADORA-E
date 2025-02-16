@@ -56,9 +56,9 @@ sliderElement.addEventListener('touchmove', (event) => {
 /* Evento touchend: Compara las coordenadas, determinando el movimiento final, es decir, si se realiza el deslizamiento hacia la izquierda o derecha. */
 sliderElement.addEventListener('touchend', () => {
     if (startX - endX > 50) {
-        positionSlide(indexNumber + 1); 
+        positionSlide(indexNumber + 1); // Deslizamiento hacia la izquierda
     } else if (endX - startX > 50) {
-        positionSlide(indexNumber - 1); 
+        positionSlide(indexNumber - 1); // Deslizamiento hacia la derecha
     }
 });
 
