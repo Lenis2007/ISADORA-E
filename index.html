@@ -11,28 +11,58 @@
 <body>
     <h1 class="name-game">ISADORA</h1>
 
-    <div class="slider-container">
+    <section class="players" id="players">
+        <div class="slider-container">
 
-        <div class="slider">
-            <div class="slide">
-                <h2> 2 </h2>
-                <h1> Jugadores </h1>
+            <div class="slider">
+                <div class="slide">
+                    <h2> 2 </h2>
+                    <h1> Jugadores </h1>
+                </div>
+                <div class="slide">
+                    <h2> 3 </h2>
+                    <h1> Jugadores </h1>
+                </div>
+                <div class="slide">
+                    <h2> 4 </h2>
+                    <h1> Jugadores </h1>
+                </div>
             </div>
-            <div class="slide">
-                <h2> 3 </h2>
-                <h1> Jugadores </h1>
-            </div>
-            <div class="slide">
-                <h2> 4 </h2>
-                <h1> Jugadores </h1>
+
+        </div>
+        <div class="play">
+            <button id="btn-play" onclick="startGame()"> PLAY </button>
+        </div>
+    </section>
+
+    <section id="game" class="oculto">
+        <h2 id="turno-jugador">Turno de: <span id="nombre-jugador"></span></h2>
+        <div class="a">
+            <div class="random-letter">
+                <div class="letter"> A </div>
             </div>
         </div>
+        <h3 id="contador-tiempo">Tiempo: <span id="tiempo">60</span> s</h3>
+        <input type="text" id="entrada-palabra" placeholder="Escribe una palabra">
+        <button onclick="agregarPalabra()">Agregar</button>
+        <ul id="lista-palabras"></ul>
+    </section>
 
-    </div>
-    <div class="play">
-        <button> PLAY </button>
-    </div>
-    <script src="scripts/slider.js"></script>
+    <section id="resultados" class="oculto">
+        <h2>Resultados Finales</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Puesto</th>
+                    <th>Jugador</th>
+                    <th>Palabras</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="tabla-resultados"></tbody>
+        </table>
+    </section>
+    <script src="scripts/logic.js"></script>
 </body>
 
 </html>

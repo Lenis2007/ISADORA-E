@@ -11,35 +11,23 @@ Tester - Michelle Betancurt Montes
 
 # Documentación del Proceso
 
-| TAREA                                        | TIEMPO ESTIMADO POR APRENDIZ | TIEMPO REAL | PROBLEMAS                           | SOLUCIONES                        |
-| :------------------------------------------- | :--------------------------- | :---------- | :---------------------------------- | :-------------------------------- |
-| Reunión inicial (cliente)                    | 30 min                       | 5 min       | Solo se presenta el jugador ganador | Ranking o rango de los jugadores. |
-| Estructura básica (interfaz 1)               | 35 min                       |             |                                     |                                   |
-| Estructura básica (interfaz 2)               | 20 min                       |             |                                     |                                   |
-| Estructura básica (interfaz 3)               | 40 min                       |             |                                     |                                   |
-| Estructura básica (interfaz 4)               | 30 min                       |             |                                     |                                   |
-| Estructura básica (interfaz 5 Ranking)       | 50 min                       |             |                                     |                                   |
-| Investigación de colores a usar              | 30 min                       |             |                                     |                                   |
-| Implementar lógica de movimiento (jugadores) | 40 min                       |             |                                     |                                   |
-| Generar cronometro de inicio                 | 30 min                       |             |                                     |                                   |
-| Generar letras aleatorias                    | 30 min                       |             |                                     |                                   |
-| Generar cronometro de partida                | 30 min                       |             |                                     |                                   |
-| Validación de palabras repetidas             | 40 min                       |             |                                     |                                   |
-| Mostrar lista de palabras y total            | 40 min                       |             |                                     |                                   |
-| Mostrar ranking de jugadores                 | 50 min                       |             |                                     |                                   |
-| Pruebas de funcionalidad                     | 30 min                       |             |                                     |                                   |
-| Pruebas de responsive (tester)               | 60 min                       |             |                                     |                                   |
-| Correcciones                                 |                              |             |                                     |                                   |
-| Revisión intermedia (cliente)                |                              |             |                                     |                                   |
-|                                              |                              |             |                                     |                                   
-
-| FEEDBACK (CLIENTE) | CAMBIOS REALIZADOS |
-| :----------------- | :----------------- |
-|                    |                    |
-|                    |                    |
-|                    |                    |
-|                    |                    |
-|                    |                    |
-|                    |                    |
-|                    |                    |
-|                    |                    |
+| TAREA                                                    | TIEMPO ESTIMADO POR APRENDIZ | TIEMPO REAL     | PROBLEMAS                                               | SOLUCIONES                                                                                                    |
+| :------------------------------------------------------- | :--------------------------- | :-------------- | :------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------ |
+| Reunión inicial                                          | 10 min                       | 5 min           | Interfaz que presenta solo el jugador ganador.          | Ranking de los jugadores en lista al final del juego.                                                         |
+| Estructura básica (selección de cantidad)                | 35 min                       |                 |                                                         |                                                                                                               |
+| Estructura básica (Inicio de Juego)                      | 20 min                       |                 |                                                         |                                                                                                               |
+| Estructura básica (Lista de palabras al finalizar turno) | 40 min                       |                 |                                                         |                                                                                                               |
+| Estructura básica (Ranking de jugadores)                 | 30 min                       |                 |                                                         |                                                                                                               |
+| Implementar lógica de slider                             | 2 horas                      | 3 horas         | El slider funcionaba de derecha a izquierda.            | Se utilizan condicionales, según coordenadas para saber el movimiento.                                        |
+| Generar cronometro de inicio                             | 30 min                       |                 |                                                         |                                                                                                               |
+| Generar letras aleatorias.                               | 40 min                       | 50 min          | No aparecía la letra aleatoria.                         | Se utilizaron métodos matemáticos, donde se concentra en el índice de la variable de letras.                  |
+| Generar cronometro de partida                            | 30 min                       |                 |                                                         |                                                                                                               |
+| Validación de palabras repetidas                         | 40 min                       | 1 hora y 30 min | Validación directa utilizando métodos pero para borrar. | Se utilizan condicionales permitiendo dar condiciones y mensajes como ventanas emergentes con 2 validaciones. |
+| Mostrar lista de palabras y total                        | 40 min                       |                 |                                                         |                                                                                                               |
+| Mostrar ranking de palabras                              | 50 min                       | 1 hora          | Se mostraba sin el puesto correspondiente,              | Se utilizan métodos para organizar.                                                                           |
+| Pruebas de funcionalidad                                 | 30 min                       |                 |                                                         |                                                                                                               |
+| Pruebas de responsive                                    | 60 min                       |                 |                                                         |                                                                                                               |
+|                                                          |                              |                 |                                                         |                                                                                                               |
+| FEEDBACK (CLIENTE)                                       | CAMBIOS                      |                 |                                                         |                                                                                                               |
+|                                                          |                              |                 |                                                         |                                                                                                               |
+|                                                          |                              |                 |                                                         |                                                                                                               |
