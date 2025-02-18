@@ -173,6 +173,11 @@ h3 {
     color: #ffffff;
 }
 
+.word-list {
+    height: 60px;
+    overflow-y: scroll;
+}
+
 #resultados {
     border-radius: 15px;
     font-weight: 100;
