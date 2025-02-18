@@ -36,27 +36,29 @@
     </section>
 
     <section id="game" class="oculto">
-        <h2 id="turno-jugador">Turno de: <span id="nombre-jugador"></span></h2>
+        <h3 id="contador-tiempo"> Tiempo: <span id="tiempo"> 60 </span> sg </h3>
+        <h2 id="turno-jugador"> <span id="nombre-jugador"></span></h2>
         <div class="a">
             <div class="random-letter">
                 <div class="letter"> A </div>
             </div>
         </div>
-        <h3 id="contador-tiempo">Tiempo: <span id="tiempo">60</span> s</h3>
-        <input type="text" id="entrada-palabra" placeholder="Escribe una palabra">
-        <button onclick="agregarPalabra()">Agregar</button>
+        <div class="ingresar">
+            <input type="text" id="entrada-palabra" >
+            <button class="agregar-palabra" onclick="agregarPalabra()"> + </button>
+        </div>
+        <h3>Lista de Palabras</h3>
         <ul id="lista-palabras"></ul>
     </section>
 
     <section id="resultados" class="oculto">
-        <h2>Resultados Finales</h2>
+        <h2 class="resultado">Resultados Finales</h2>
         <table>
             <thead>
                 <tr>
-                    <th>Puesto</th>
+                    <th> ♔ </th>
                     <th>Jugador</th>
-                    <th>Palabras</th>
-                    <th>Total</th>
+                    <th>Total de Palabras</th>
                 </tr>
             </thead>
             <tbody id="tabla-resultados"></tbody>

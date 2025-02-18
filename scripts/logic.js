@@ -168,7 +168,6 @@ function mostrarResultados() {
                 <tr>
                     <td>${index + 1}</td>
                     <td>${j.nombre}</td>
-                    <td>${palabrasIngresadas[j.nombre].join(', ')}</td>
                     <td>${j.total}</td>
                 </tr>
             `;
