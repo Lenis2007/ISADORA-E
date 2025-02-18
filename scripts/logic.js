@@ -135,7 +135,7 @@ function iniciarTurno() {
                 iniciarTurno(); // Iniciar turno del siguiente jugador
             }, 10000);
         }
-    }, 1000);
+    }, 1000);
 }
 
 /* Mostrar palabras ingresadas por el jugador */
