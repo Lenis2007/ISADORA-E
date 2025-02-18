@@ -166,6 +166,18 @@ h3 {
     color: #030677;
 }
 
+h4 {
+    margin: 10px;
+    font-size: 16px;
+    color: #030677;
+}
+
+p {
+    margin: 10px;
+    font-size: 16px;
+    color: #030677;
+}
+
 #lista-palabras {
     margin: 10px;
     list-style: none;
