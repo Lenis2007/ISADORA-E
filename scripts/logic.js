@@ -102,6 +102,7 @@ function letter() {
     });
 }
 
+// iniciar el turno del jugador
 function iniciarTurno() {
     if (turnoActual >= jugadores.length) {
         mostrarResultados();
@@ -113,6 +114,9 @@ function iniciarTurno() {
     document.getElementById('lista-palabras').innerHTML = '';
     document.getElementById('entrada-palabra').value = '';
 
+    // Ocultar el div de palabras ingresadas al inicio del turno
+    document.getElementById('palabras-ingresadas').style.display = 'none';
+
     tiempoRestante = 60;
     document.getElementById('tiempo').textContent = tiempoRestante;
 
@@ -122,11 +126,50 @@ function iniciarTurno() {
 
         if (tiempoRestante <= 0) {
             clearInterval(interval);
-            turnoActual++;
-            iniciarTurno();
+            mostrarPalabrasJugador(jugador); // Mostrar palabras ingresadas
+            setTimeout(() => {
+                // Mostrar de nuevo el juego y pasar al siguiente jugador
+                document.getElementById('palabras-ingresadas').style.display = 'none'; // Ocultar el div de palabras
+                /* document.getElementById('juego').classList.remove('oculto'); // Mostrar el área del juego */
+                turnoActual++;
+                iniciarTurno(); // Iniciar turno del siguiente jugador
+            }, 10000);
         }
     }, 1000);
 }
+
+/* Mostrar palabras ingresadas por el jugador */
+function mostrarPalabrasJugador(jugador) {
+    const palabras = palabrasIngresadas[jugador];
+    const palabrasDiv = document.getElementById('palabras-ingresadas');
+    
+    // Calcular puntos
+    const puntos = palabras.length; // Cada palabra equivale a un punto
+
+    // Mostrar palabras y puntos
+    palabrasDiv.innerHTML = `<h4>Palabras ingresadas por ${jugador}:</h4><p>${palabras.join(', ')}</p><p>Puntos: ${puntos}</p>`;
+    palabrasDiv.style.display = 'block'; // Mostrar el div con las palabras
+}
+
+
+/* Mostrar palabras ingresadas por el jugador */
+function mostrarPalabrasJugador(jugador) {
+    const palabras = palabrasIngresadas[jugador];
+    const palabrasDiv = document.getElementById('palabras-ingresadas');
+    
+    // Calcular puntos (cada palabra = 1 punto)
+    const puntos = palabras.length; 
+
+    // Mostrar palabras y puntos en el recuadro
+    palabrasDiv.innerHTML = `
+        <h3>Turno de ${jugador} finalizado</h3>
+        <h4>Palabras ingresadas:</h4>
+        <p>${palabras.length > 0 ? palabras.join(', ') : "Ninguna palabra ingresada"}</p>
+        <h4>Puntos obtenidos: ${puntos}</h4>
+    `;
+    palabrasDiv.style.display = 'block'; // Mostrar el recuadro con las palabras
+}
+
 
 /* Agregar palabras de manera que hay validadores utilizando condicionales
  para que no hayan palabras repetidas o que las palabras comiencen por 
